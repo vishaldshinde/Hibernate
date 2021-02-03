@@ -13,11 +13,17 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">false</property>
 
-
+		<!-- Hibernate APIs -->
 		<mapping class="org.techforce.hibernate.entities.Student" />
 		<mapping class="org.techforce.hibernate.entities.ImageWrapper" />
+		
+		<!-- One to One -->
 		<mapping class="org.techforce.hibernate.entities.Customer" />
 		<mapping class="org.techforce.hibernate.entities.Locker" />
+		
+		<!-- Many to One -->
+		<mapping class="org.techforce.hibernate.entities.Employee" />
+		<mapping class="org.techforce.hibernate.entities.Address" />
 
 	</session-factory>
 </hibernate-configuration>
