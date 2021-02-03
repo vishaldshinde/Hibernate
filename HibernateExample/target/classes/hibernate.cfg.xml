@@ -40,6 +40,10 @@
 		<mapping class="org.techforce.hibernate.inheritance_joined.SavingAccount" />
 		<mapping class="org.techforce.hibernate.inheritance_joined.CurrentAccount" />
 		
+		<!-- Inheritance TablePerClass-->
+		<mapping class="org.techforce.hibernate.inheritance_table_per_class.Account" />
+		<mapping class="org.techforce.hibernate.inheritance_table_per_class.SavingAccount" />
+		<mapping class="org.techforce.hibernate.inheritance_table_per_class.CurrentAccount" />
 		
 
 	</session-factory>
