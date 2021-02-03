@@ -24,6 +24,10 @@
 		<!-- Many to One -->
 		<mapping class="org.techforce.hibernate.entities.Employee" />
 		<mapping class="org.techforce.hibernate.entities.Address" />
+		
+		<!-- Many to Many -->
+			<mapping class="org.techforce.hibernate.entities.NCustomer" />
+		<mapping class="org.techforce.hibernate.entities.Account" />
 
 	</session-factory>
 </hibernate-configuration>
