@@ -26,8 +26,15 @@
 		<mapping class="org.techforce.hibernate.entities.Address" />
 		
 		<!-- Many to Many -->
-			<mapping class="org.techforce.hibernate.entities.NCustomer" />
+		<mapping class="org.techforce.hibernate.entities.NCustomer" />
 		<mapping class="org.techforce.hibernate.entities.Account" />
+		
+		<!-- Inheritance Single Table -->
+		<mapping class="org.techforce.hibernate.inheritance_single_table.Account" />
+		<mapping class="org.techforce.hibernate.inheritance_single_table.SavingAccount" />
+		<mapping class="org.techforce.hibernate.inheritance_single_table.CurrentAccount" />
+		
+		
 
 	</session-factory>
 </hibernate-configuration>
