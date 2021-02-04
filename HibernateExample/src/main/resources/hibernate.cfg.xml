@@ -13,38 +13,54 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">false</property>
 
+		<!-- Enable/Disable 2nd level cache -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+
 		<!-- Hibernate APIs -->
 		<mapping class="org.techforce.hibernate.entities.Student" />
 		<mapping class="org.techforce.hibernate.entities.ImageWrapper" />
-		
+
 		<!-- One to One -->
 		<mapping class="org.techforce.hibernate.entities.Customer" />
 		<mapping class="org.techforce.hibernate.entities.Locker" />
-		
+
 		<!-- Many to One -->
 		<mapping class="org.techforce.hibernate.entities.Employee" />
 		<mapping class="org.techforce.hibernate.entities.Address" />
-		
+
 		<!-- Many to Many -->
 		<mapping class="org.techforce.hibernate.entities.NCustomer" />
 		<mapping class="org.techforce.hibernate.entities.Account" />
-		
-		<!-- Inheritance Single Table -->
-		<mapping class="org.techforce.hibernate.inheritance_single_table.Account" />
-		<mapping class="org.techforce.hibernate.inheritance_single_table.SavingAccount" />
-		<mapping class="org.techforce.hibernate.inheritance_single_table.CurrentAccount" />
-		
-		
-		<!-- Inheritance Joined -->
-		<mapping class="org.techforce.hibernate.inheritance_joined.Account" />
-		<mapping class="org.techforce.hibernate.inheritance_joined.SavingAccount" />
-		<mapping class="org.techforce.hibernate.inheritance_joined.CurrentAccount" />
-		
-		<!-- Inheritance TablePerClass-->
-		<mapping class="org.techforce.hibernate.inheritance_table_per_class.Account" />
-		<mapping class="org.techforce.hibernate.inheritance_table_per_class.SavingAccount" />
-		<mapping class="org.techforce.hibernate.inheritance_table_per_class.CurrentAccount" />
-		
 
+		<!-- Inheritance Single Table -->
+		<mapping
+			class="org.techforce.hibernate.inheritance_single_table.Account" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_single_table.SavingAccount" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_single_table.CurrentAccount" />
+
+
+		<!-- Inheritance Joined -->
+		<mapping
+			class="org.techforce.hibernate.inheritance_joined.Account" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_joined.SavingAccount" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_joined.CurrentAccount" />
+
+		<!-- Inheritance TablePerClass -->
+		<mapping
+			class="org.techforce.hibernate.inheritance_table_per_class.Account" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_table_per_class.SavingAccount" />
+		<mapping
+			class="org.techforce.hibernate.inheritance_table_per_class.CurrentAccount" />
+
+		<!-- 2nd level cache -->
+
+		<mapping
+			class="org.techforce.hibernate.cache_2level.CacheEmployee" />
 	</session-factory>
 </hibernate-configuration>
