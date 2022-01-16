@@ -19,6 +19,16 @@ public class Account {
 	private Date opening_date;
 	@Column(name = "account_status")
 	private String account_status;
+	
+	private String ACH;
+
+	public String getACH() {
+		return ACH;
+	}
+
+	public void setACH(String aCH) {
+		ACH = aCH;
+	}
 
 	public Long getAccount_no() {
 		return account_no;
