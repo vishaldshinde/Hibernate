@@ -15,6 +15,7 @@ public class SaveCustomer {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 
+		//comment1
 		Customer customer = new Customer();
 		customer.setId(1);
 		customer.setName("Vishal");
